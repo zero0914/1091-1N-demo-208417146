@@ -9,7 +9,8 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <title>Introduction</title>
+    <title>Div Demo</title>
+    <link rel="stylesheet" href="./div_tku60.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-lg bg-warning">
@@ -45,8 +46,14 @@
               tku classdemo
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="./intro_bs.html">Intro</a>
-              <a class="dropdown-item" href="./pokemon_bs.html">Pokemon</a>
+              <a class="dropdown-item" href="../w01-intro-pokemon/intro_bs.html"
+                >Intro</a
+              >
+              <a
+                class="dropdown-item"
+                href="../w01-intro-pokemon/pokemon_bs.html"
+                >Pokemon</a
+              >
               <a class="dropdown-item" href="../w02-imgGallery/imgGallery.html"
                 >ImageGallery</a
               >
@@ -64,19 +71,59 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <div class="row mx-auto">
-        <div class="col">
-          <div>
-            <h1 class="text-danger">MoGi</h1>
-            <img src="./111.jpg" width="350px" alt="" /><br />
-            <a href="http://www.csie.tku.edu.tw/" class="text-success"
-              >bang bang gun</a
-            >
+    <div id="container">
+      <div id="heading">
+        <h2>Heading</h2>
+        <ul>
+          <li>
+            <a href="#">Link 1</a>
+          </li>
+          <li>
+            <a href="#">Link 2</a>
+          </li>
+          <li>
+            <a href="#">Link 2</a>
+          </li>
+        </ul>
+      </div>
+      <div id="main">
+        <aside>
+          <ul>
+            <li onclick="changeVideo(1)">
+              <a href="#">淡江大戲 1</a>
+            </li>
+            <li onclick="changeVideo(2)">
+              <a href="#">淡江大戲 2</a>
+            </li>
+            <li onclick="changeVideo(3)">
+              <a href="#">淡江大戲 3</a>
+            </li>
+            <li onclick="changeVideo(4)">
+              <a href="#">淡江大戲 4</a>
+            </li>
+            <li onclick="changeVideo(5)">
+              <a href="#">淡江大戲 5</a>
+            </li>
+          </ul>
+        </aside>
+        <div id="section">
+          <div class="video-responsive">
+            <div id="player">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RechrtUxfQc"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
+      <div id="footer"></div>
     </div>
+    <script src="./div_tku.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
