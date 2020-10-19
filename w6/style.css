@@ -68,7 +68,7 @@ a {
   background: url('./img//slide1.png') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   text-align: center;
   justify-content: flex-end;
   margin-bottom: 20px;
